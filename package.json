@@ -1,0 +1,26 @@
+{
+  "name": "taxonomy_workbench",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test:ui": "cucumber-js test --tags @ui --config cucumber.json --format ./reporter.js",
+    "test:gql": "cucumber-js test --tags @gql --config cucumber.json --format ./reporter.js",
+    "test:api": "cucumber-js test --tags @api --config cucumber.json --format ./reporter.js",
+    "test": "cucumber-js test --config cucumber.json --format ./reporter.js",
+    "test:report-gen": "npx allure generate --clean ./allure-results && allure open allure-report"
+  },
+  "keywords": [],
+  "author": "Sudhanshu Kumar",
+  "license": "ISC",
+  "description": "Test automation scripts of taxonomy_workbench",
+  "devDependencies": {
+    "@cucumber/cucumber": "^10.8.0",
+    "@playwright/test": "^1.45.2",
+    "@types/node": "^20.14.11",
+    "allure-cucumberjs": "^2.15.1",
+    "axios": "^1.7.2",
+    "cucumber-console-formatter": "1.0.0",
+    "playwright-core": "^1.45.3",
+    "ts-node": "^10.9.2"
+  }
+}
