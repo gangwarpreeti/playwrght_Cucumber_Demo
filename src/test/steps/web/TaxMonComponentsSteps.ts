@@ -67,5 +67,9 @@ Given(`User verify the pagination presented on compliance page`,async function()
     await commonFunction.verifyPagination();
 });
 
+Given(`User u the pagination presented on compliance page`,async function() {
+    await commonFunction.verifyPagination();
+});
+
 // Then(`User logout the application`,async function() {
 // });
